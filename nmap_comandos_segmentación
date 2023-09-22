@@ -4,20 +4,20 @@ ESTE HABRÁ QUE HACERLO AL SALTAR A PUEBLA
 
 De Puebla a Puebla
 nmap -sP -iL puebla_hosts.txt -oA de_192.168.100.232_a_puebla_ping -v
-map -sS -iL puebla_hosts.txt -oA de_192.168.100.232_a_puebla_syn -v -Pn -F -T5
+nmap -sS -iL puebla_hosts.txt -oA de_192.168.100.232_a_puebla_syn -v -Pn -F -T5
 
 De Puebla a Tijuana
-nmap -sP -iL tijuana_hosts.txt -oA de_192.168.100.232_a_tijuana -v
-map -sS -iL tijuana_hosts.txt -oA de_192.168.100.232_a_tijuana -v -Pn -F -T5
+nmap -sP -iL tijuana_hosts.txt -oA de_192.168.100.232_a_tijuana_ping -v
+nmap -sS -iL tijuana_hosts.txt -oA de_192.168.100.232_a_tijuana_syn -v -Pn -F -T5
 
 
 ########################################################################################################
 ·························································································
 De Tijuana a Tijuana
 nmap -sP -iL tijuana_hosts.txt -oA de_192.168.100.232_a_tijuana_ping -v
-map -sS -iL tijuana_hosts.txt -oA de_192.168.100.232_a_tijuana_syn -v -Pn -F -T5
+nmap -sS -iL tijuana_hosts.txt -oA de_192.168.100.232_a_tijuana_syn -v -Pn -F -T5
 ·························································································
 De Tijuana a Puebla
 nmap -sP -iL puebla_hosts.txt -oA de_192.168.100.232_a_puebla_ping -v
-map -sS -iL puebla_hosts.txt -oA de_192.168.100.232_a_puebla_syn -v -Pn -F -T5
+nmap -sS -iL puebla_hosts.txt -oA de_192.168.100.232_a_puebla_syn -v -Pn -F -T5
 ·························································································
